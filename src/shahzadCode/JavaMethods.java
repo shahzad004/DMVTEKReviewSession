@@ -2,28 +2,28 @@ package shahzadCode;
 
 public class JavaMethods {
 
-    public static String school = "DMVTEK";
-
-    public static String rev(String word){
-
-        String revWord = "";
-        for(int i = word.length()-1 ; i>=0; i--){
-                     revWord +=word.charAt(i);
-                 }
-        return revWord;
+    int number ;
+// TO check number is Even or Odd
+    public static void checkNum(int num){
+        if(num%2==0){
+            System.out.println("Even");
+        }else{
+            System.out.println("ODD");
+        }
     }
-    
-    public static double sum(int a, double b){
-        double result = a + b;
-        System.out.println(" Sum of A + B = " + result );
-        return result;
-    }
+
+// to create String[] of three websites
+    String[] websites ={"GOOGLE.COM", "GOOGLE.COM","GOOGLE.COM"};
+
+
+
 
     public static void main(String[] args) {
+        String[]  car = new String[4];
+       checkNum(101);
+       car[0]= "BMW";
 
-        System.out.println( rev(school));
-
-
+        System.out.println(car[0]);
 
     }
 }
